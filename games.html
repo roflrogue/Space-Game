@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<?php
+include 'sessionHandle.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- If IE use the latest rendering engine -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set the page to the width of the device and set the zoon level -->
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>HTML5 Game</title>
+        <style>
+            .flexContent canvas{
+                position: absolute;
+            }
+        </style>
+        <script src = "jquery-1.11.3.js"></script>
+        <script src = "game.js"></script>
+    </head>
+    <body style="background-color:black;">  
+        <main class="pageWrap">
+            <section class="flexInner">
+                <header class="flexHeader">
+                    <h1>Welcome to RoflRogue.ninja!</h1>
+                </header>
+                <section class="flexBody">
+                    <section class="flexContent">
+                        
+                        <canvas id = "backgroundCanvas" width="400px" height="500px"></canvas>
+                        <canvas id = "playerCanvas" width="400px" height="500px"></canvas>
+                        <canvas id = "enemyCanvas" width="400px" height="500"></canvas>
+                        <canvas id = "shotCanvas" width="400px" height="500"></canvas>
+			         </section>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
